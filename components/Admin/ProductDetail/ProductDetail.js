@@ -32,7 +32,7 @@ const ProductDetail = (props) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.imageProduct}>
-      <Image src={ProductDetail1} width={600} height={320} alt='' />
+      <Image src={ProductDetail1} width={600} height={300} alt='' />
       </div>
       <div className={styles.detailContainer}>
       <blockquote contenteditable="true" style={{ width: '268px', height: '55px' }}>

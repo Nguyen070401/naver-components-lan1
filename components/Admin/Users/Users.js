@@ -74,7 +74,10 @@ const Users = () => {
                 "balance": 70663,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "f230fh0g3",
+                "createdBy": "Việt Hoàng",
+                "password": "43987594754"
             },
             {
                 id: "1001",
@@ -95,7 +98,10 @@ const Users = () => {
                 "balance": 82429,
                 "email": "hoaian123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
                 id: "1002",
@@ -116,7 +122,10 @@ const Users = () => {
                 "balance": 28334,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Việt Hoàng",
+                "password": "43987594754"
             },
             {
                 id: "1003",
@@ -137,10 +146,13 @@ const Users = () => {
                 "balance": 88521,
                 "email": "hoaian123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1004",
                 "name": "Donette Foller",
                 "country": {
                     "name": "South Africa",
@@ -158,10 +170,13 @@ const Users = () => {
                 "balance": 93905,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1005",
                 "name": "Simona Morasca",
                 "country": {
                     "name": "Egypt",
@@ -179,10 +194,13 @@ const Users = () => {
                 "balance": 93905,
                 "email": "hoaian123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1006",
                 "name": "Mitsue Tollner",
                 "country": {
                     "name": "Paraguay",
@@ -200,10 +218,13 @@ const Users = () => {
                 "balance": 93905,
                 "email": "hoaian123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1007",
                 "name": "Leota Dilliard",
                 "country": {
                     "name": "Serbia",
@@ -221,10 +242,13 @@ const Users = () => {
                 "balance": 93905,
                 "email": "hoaian123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1008",
                 "name": "Sage Wieser",
                 "country": {
                     "name": "Egypt",
@@ -242,10 +266,13 @@ const Users = () => {
                 "balance": 93905,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1010",
                 "name": "Kris Marrier",
                 "country": {
                     "name": "Mexico",
@@ -263,10 +290,13 @@ const Users = () => {
                 "balance": 93905,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1011",
                 "name": "Minna Amigon",
                 "country": {
                     "name": "Romania",
@@ -284,10 +314,13 @@ const Users = () => {
                 "balance": 93905,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777" 
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1012",
                 "name": "Abel Maclead",
                 "country": {
                     "name": "Singapore",
@@ -305,10 +338,13 @@ const Users = () => {
                 "balance": 93905,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1013",
                 "name": "Kiley Caldarera",
                 "country": {
                     "name": "Serbia",
@@ -326,10 +362,13 @@ const Users = () => {
                 "balance": 93905,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1014",
                 "name": "Graciela Ruta",
                 "country": {
                     "name": "Chile",
@@ -347,10 +386,13 @@ const Users = () => {
                 "balance": 93905,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1015",
                 "name": "Cammy Albares",
                 "country": {
                     "name": "Philippines",
@@ -368,10 +410,13 @@ const Users = () => {
                 "balance": 93905,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1016",
                 "name": "Mattie Poquette",
                 "country": {
                     "name": "Venezuela",
@@ -389,10 +434,13 @@ const Users = () => {
                 "balance": 93905,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1017",
                 "name": "Meaghan Garufi",
                 "country": {
                     "name": "Malaysia",
@@ -409,10 +457,13 @@ const Users = () => {
                 },
                 "balance": 93905,
                 "email": "quockhanh123@gmail.com",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1018",
                 "name": "Gladys Rim",
                 "country": {
                     "name": "Netherlands",
@@ -430,10 +481,13 @@ const Users = () => {
                 "balance": 93905,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1019",
                 "name": "Yuki Whobrey",
                 "country": {
                     "name": "Israel",
@@ -451,10 +505,13 @@ const Users = () => {
                 "balance": 93905,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1020",
                 "name": "Fletcher Flosi",
                 "country": {
                     "name": "Argentina",
@@ -472,10 +529,13 @@ const Users = () => {
                 "balance": 93905,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1021",
                 "name": "Bette Nicka",
                 "country": {
                     "name": "Paraguay",
@@ -493,10 +553,13 @@ const Users = () => {
                 "balance": 93905,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1022",
                 "name": "Veronika Inouye",
                 "country": {
                     "name": "Ecuador",
@@ -514,10 +577,13 @@ const Users = () => {
                 "balance": 93905,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1023",
                 "name": "Willard Kolmetz",
                 "country": {
                     "name": "Tunisia",
@@ -535,10 +601,13 @@ const Users = () => {
                 "balance": 93905,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1024",
                 "name": "Maryann Royster",
                 "country": {
                     "name": "Belarus",
@@ -556,10 +625,13 @@ const Users = () => {
                 "balance": 93905,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1025",
                 "name": "Alisha Slusarski",
                 "country": {
                     "name": "Iceland",
@@ -577,7 +649,10 @@ const Users = () => {
                 "balance": 93905,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
                 "id": 1025,
@@ -598,10 +673,13 @@ const Users = () => {
                 "balance": 93905,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1026",
                 "name": "Chanel Caudy",
                 "country": {
                     "name": "Argentina",
@@ -619,10 +697,13 @@ const Users = () => {
                 "balance": 93905,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
             {
-                id: "1000",
+                id: "1027",
                 "name": "Ezekiel Chui",
                 "country": {
                     "name": "Ireland",
@@ -640,7 +721,10 @@ const Users = () => {
                 "balance": 93905,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777"
+                "phone": "0973256777",
+                "myorder": "nvklal433",
+                "createdBy": "Phạm Nam",
+                "password": "43987597436"
             },
         ])
     }, []);
@@ -675,12 +759,16 @@ const Users = () => {
         );
     }
 
-    const emailBodyTemplate = (rowData) => {
-        return (rowData.email);
+    const idBodyTemplate = (rowData) => {
+        return (rowData.id);
     }
 
     const phoneBodyTemplate = (rowData) => {
         return (rowData.phone);
+    }
+
+    const createdByBodyTemplate = (rowData) => {
+        return (rowData.createdBy);
     }
 
     const addressBodyTemplate = (rowData) => {
@@ -726,11 +814,13 @@ const Users = () => {
                     responsiveLayout="scroll"
                     >
                     <Column selectionMode="multiple" selectionAriaLabel="name" headerStyle={{ width: '1rem' }}></Column>
+                    <Column field="id" header="ID" sortable dataType="id" style={{ minWidth: '6rem' }} editor={(options) => textEditor(options)} body={idBodyTemplate}/>
                     <Column field="name" header="Name" style={{ marginRight: "6rem"}} sortable filterPlaceholder="Search by name" editor={(options) => textEditor(options)} body={nameBodyTemplate} />
-                    <Column field="email" header="Email" sortable dataType="email" style={{ minWidth: '6rem' }} editor={(options) => textEditor(options)} body={emailBodyTemplate}/>
                     <Column field="address" header="Address" sortable filterMenuStyle={{ width: '10rem' }} style={{ minWidth: '8rem' }} editor={(options) => textEditor(options)} body={addressBodyTemplate} />
-                    <Column field="date" header="Date" sortable filterField="date" dataType="date" editor={(options) => textEditor(options)} style={{ Width: '4rem' }}  />
+                    <Column field="createdBy" header="CreatedBy" sortable dataType="createby" style={{ minWidth: '6rem' }} body={createdByBodyTemplate} editor={(options) => textEditor(options)} filterElement={balanceFilterTemplate} />
                     <Column field="phone" header="Phone" sortable dataType="phone" style={{ minWidth: '6rem' }} body={phoneBodyTemplate} editor={(options) => textEditor(options)} filterElement={balanceFilterTemplate} />
+                    <Column field="password" header="Password" sortable filterField="password" dataType="password" editor={(options) => textEditor(options)} style={{ Width: '4rem' }}  />
+                    <Column field="myorder" header="MyOrder" sortable filterField="myorder" dataType="myorder" editor={(options) => textEditor(options)} style={{ Width: '4rem' }}  />
                     <Column
                         rowEditor
                         headerStyle={{ width: "10%", minWidth: "8rem" }}
