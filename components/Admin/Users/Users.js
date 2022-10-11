@@ -1,15 +1,16 @@
 import 'primeicons/primeicons.css';
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
 import 'primereact/resources/primereact.css';
-import 'primeflex/primeflex.css';
-import ReactDOM from 'react-dom';
-
 import React, { useState, useEffect } from 'react';
 import { FilterMatchMode, FilterOperator } from 'primereact/api';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { InputText } from 'primereact/inputtext';
 import { InputNumber } from 'primereact/inputnumber';
+import Image from 'next/image';
+import Logo from '../../../static/Product1.png'
+import Router from 'next/router';
+import { BsEye } from 'react-icons/bs';
 
 const styles = {
     wrapper: 'mx-auto w-full p-4 flex flex-col shadow-lg rounded-md',
@@ -21,7 +22,6 @@ const styles = {
 
 
 const Users = () => {
-    const [customers, setCustomers] = useState(null);
     const [selectedCustomers, setSelectedCustomers] = useState(null);
     const [filters, setFilters] = useState({
         'global': { value: null, matchMode: FilterMatchMode.CONTAINS },
@@ -35,16 +35,16 @@ const Users = () => {
     });
     const [globalFilterValue, setGlobalFilterValue] = useState('');
     const representatives = [
-        {name: "Amy Elsner", image: 'amyelsner.png'},
-        {name: "Anna Fali", image: 'annafali.png'},
-        {name: "Asiya Javayant", image: 'asiyajavayant.png'},
-        {name: "Bernardo Dominic", image: 'bernardodominic.png'},
-        {name: "Elwin Sharvill", image: 'elwinsharvill.png'},
-        {name: "Ioni Bowcher", image: 'ionibowcher.png'},
-        {name: "Ivan Magalhaes",image: 'ivanmagalhaes.png'},
-        {name: "Onyama Limba", image: 'onyamalimba.png'},
-        {name: "Stephen Shaw", image: 'stephenshaw.png'},
-        {name: "XuXue Feng", image: 'xuxuefeng.png'}
+        { name: "Amy Elsner", image: 'amyelsner.png' },
+        { name: "Anna Fali", image: 'annafali.png' },
+        { name: "Asiya Javayant", image: 'asiyajavayant.png' },
+        { name: "Bernardo Dominic", image: 'bernardodominic.png' },
+        { name: "Elwin Sharvill", image: 'elwinsharvill.png' },
+        { name: "Ioni Bowcher", image: 'ionibowcher.png' },
+        { name: "Ivan Magalhaes", image: 'ivanmagalhaes.png' },
+        { name: "Onyama Limba", image: 'onyamalimba.png' },
+        { name: "Stephen Shaw", image: 'stephenshaw.png' },
+        { name: "XuXue Feng", image: 'xuxuefeng.png' }
     ];
 
     const statuses = [
@@ -74,10 +74,7 @@ const Users = () => {
                 "balance": 70663,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777",
-                "myorder": "f230fh0g3",
-                "createdBy": "Việt Hoàng",
-                "password": "43987594754"
+                "phone": "0973256111"
             },
             {
                 id: "1001",
@@ -98,10 +95,7 @@ const Users = () => {
                 "balance": 82429,
                 "email": "hoaian123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777",
-                "myorder": "nvklal433",
-                "createdBy": "Phạm Nam",
-                "password": "43987597436"
+                "phone": "0973256222"
             },
             {
                 id: "1002",
@@ -122,10 +116,7 @@ const Users = () => {
                 "balance": 28334,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777",
-                "myorder": "nvklal433",
-                "createdBy": "Việt Hoàng",
-                "password": "43987594754"
+                "phone": "0973256333"
             },
             {
                 id: "1003",
@@ -146,10 +137,7 @@ const Users = () => {
                 "balance": 88521,
                 "email": "hoaian123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777",
-                "myorder": "nvklal433",
-                "createdBy": "Phạm Nam",
-                "password": "43987597436"
+                "phone": "0973256444"
             },
             {
                 id: "1004",
@@ -170,7 +158,7 @@ const Users = () => {
                 "balance": 93905,
                 "email": "quockhanh123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777",
+                "phone": "0973256555",
                 "myorder": "nvklal433",
                 "createdBy": "Phạm Nam",
                 "password": "43987597436"
@@ -194,7 +182,7 @@ const Users = () => {
                 "balance": 93905,
                 "email": "hoaian123@gmail.com",
                 "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777",
+                "phone": "0973256666",
                 "myorder": "nvklal433",
                 "createdBy": "Phạm Nam",
                 "password": "43987597436"
@@ -343,389 +331,6 @@ const Users = () => {
                 "createdBy": "Phạm Nam",
                 "password": "43987597436"
             },
-            {
-                id: "1013",
-                "name": "Kiley Caldarera",
-                "country": {
-                    "name": "Serbia",
-                    "code": "rs"
-                },
-                "company": "Feiner Bros",
-                "date": "2015-10-20",
-                "status": "unqualified",
-                "verified": false,
-                "activity": 80,
-                "representative": {
-                    "name": "Onyama Limba",
-                    "image": "onyamalimba.png"
-                },
-                "balance": 93905,
-                "email": "quockhanh123@gmail.com",
-                "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777",
-                "myorder": "nvklal433",
-                "createdBy": "Phạm Nam",
-                "password": "43987597436"
-            },
-            {
-                id: "1014",
-                "name": "Graciela Ruta",
-                "country": {
-                    "name": "Chile",
-                    "code": "cl"
-                },
-                "company": "Buckley Miller & Wright",
-                "date": "2016-07-25",
-                "status": "negotiation",
-                "verified": false,
-                "activity": 59,
-                "representative": {
-                    "name": "Amy Elsner",
-                    "image": "amyelsner.png"
-                },
-                "balance": 93905,
-                "email": "quockhanh123@gmail.com",
-                "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777",
-                "myorder": "nvklal433",
-                "createdBy": "Phạm Nam",
-                "password": "43987597436"
-            },
-            {
-                id: "1015",
-                "name": "Cammy Albares",
-                "country": {
-                    "name": "Philippines",
-                    "code": "ph"
-                },
-                "company": "Rousseaux, Michael Esq",
-                "date": "2019-06-25",
-                "status": "new",
-                "verified": true,
-                "activity": 90,
-                "representative": {
-                    "name": "Asiya Javayant",
-                    "image": "asiyajavayant.png"
-                },
-                "balance": 93905,
-                "email": "quockhanh123@gmail.com",
-                "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777",
-                "myorder": "nvklal433",
-                "createdBy": "Phạm Nam",
-                "password": "43987597436"
-            },
-            {
-                id: "1016",
-                "name": "Mattie Poquette",
-                "country": {
-                    "name": "Venezuela",
-                    "code": "ve"
-                },
-                "company": "Century Communications",
-                "date": "2017-12-12",
-                "status": "negotiation",
-                "verified": false,
-                "activity": 52,
-                "representative": {
-                    "name": "Anna Fali",
-                    "image": "annafali.png"
-                },
-                "balance": 93905,
-                "email": "quockhanh123@gmail.com",
-                "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777",
-                "myorder": "nvklal433",
-                "createdBy": "Phạm Nam",
-                "password": "43987597436"
-            },
-            {
-                id: "1017",
-                "name": "Meaghan Garufi",
-                "country": {
-                    "name": "Malaysia",
-                    "code": "my"
-                },
-                "company": "Bolton, Wilbur Esq",
-                "date": "2018-07-04",
-                "status": "unqualified",
-                "verified": false,
-                "activity": 31,
-                "representative": {
-                    "name": "Ivan Magalhaes",
-                    "image": "ivanmagalhaes.png"
-                },
-                "balance": 93905,
-                "email": "quockhanh123@gmail.com",
-                "phone": "0973256777",
-                "myorder": "nvklal433",
-                "createdBy": "Phạm Nam",
-                "password": "43987597436"
-            },
-            {
-                id: "1018",
-                "name": "Gladys Rim",
-                "country": {
-                    "name": "Netherlands",
-                    "code": "nl"
-                },
-                "company": "T M Byxbee Company Pc",
-                "date": "2020-02-27",
-                "status": "renewal",
-                "verified": true,
-                "activity": 48,
-                "representative": {
-                    "name": "Stephen Shaw",
-                    "image": "stephenshaw.png"
-                },
-                "balance": 93905,
-                "email": "quockhanh123@gmail.com",
-                "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777",
-                "myorder": "nvklal433",
-                "createdBy": "Phạm Nam",
-                "password": "43987597436"
-            },
-            {
-                id: "1019",
-                "name": "Yuki Whobrey",
-                "country": {
-                    "name": "Israel",
-                    "code": "il"
-                },
-                "company": "Farmers Insurance Group",
-                "date": "2017-12-21",
-                "status": "negotiation",
-                "verified": true,
-                "activity": 16,
-                "representative": {
-                    "name": "Bernardo Dominic",
-                    "image": "bernardodominic.png"
-                },
-                "balance": 93905,
-                "email": "quockhanh123@gmail.com",
-                "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777",
-                "myorder": "nvklal433",
-                "createdBy": "Phạm Nam",
-                "password": "43987597436"
-            },
-            {
-                id: "1020",
-                "name": "Fletcher Flosi",
-                "country": {
-                    "name": "Argentina",
-                    "code": "ar"
-                },
-                "company": "Post Box Services Plus",
-                "date": "2016-01-04",
-                "status": "renewal",
-                "verified": true,
-                "activity": 19,
-                "representative": {
-                    "name": "Xuxue Feng",
-                    "image": "xuxuefeng.png"
-                },
-                "balance": 93905,
-                "email": "quockhanh123@gmail.com",
-                "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777",
-                "myorder": "nvklal433",
-                "createdBy": "Phạm Nam",
-                "password": "43987597436"
-            },
-            {
-                id: "1021",
-                "name": "Bette Nicka",
-                "country": {
-                    "name": "Paraguay",
-                    "code": "py"
-                },
-                "company": "Sport En Art",
-                "date": "2016-10-21",
-                "status": "renewal",
-                "verified": false,
-                "activity": 100,
-                "representative": {
-                    "name": "Onyama Limba",
-                    "image": "onyamalimba.png"
-                },
-                "balance": 93905,
-                "email": "quockhanh123@gmail.com",
-                "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777",
-                "myorder": "nvklal433",
-                "createdBy": "Phạm Nam",
-                "password": "43987597436"
-            },
-            {
-                id: "1022",
-                "name": "Veronika Inouye",
-                "country": {
-                    "name": "Ecuador",
-                    "code": "ec"
-                },
-                "company": "C 4 Network Inc",
-                "date": "2017-03-24",
-                "status": "renewal",
-                "verified": false,
-                "activity": 72,
-                "representative": {
-                    "name": "Ioni Bowcher",
-                    "image": "ionibowcher.png"
-                },
-                "balance": 93905,
-                "email": "quockhanh123@gmail.com",
-                "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777",
-                "myorder": "nvklal433",
-                "createdBy": "Phạm Nam",
-                "password": "43987597436"
-            },
-            {
-                id: "1023",
-                "name": "Willard Kolmetz",
-                "country": {
-                    "name": "Tunisia",
-                    "code": "tn"
-                },
-                "company": "Ingalls, Donald R Esq",
-                "date": "2017-04-15",
-                "status": "renewal",
-                "verified": true,
-                "activity": 94,
-                "representative": {
-                    "name": "Asiya Javayant",
-                    "image": "asiyajavayant.png"
-                },
-                "balance": 93905,
-                "email": "quockhanh123@gmail.com",
-                "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777",
-                "myorder": "nvklal433",
-                "createdBy": "Phạm Nam",
-                "password": "43987597436"
-            },
-            {
-                id: "1024",
-                "name": "Maryann Royster",
-                "country": {
-                    "name": "Belarus",
-                    "code": "by"
-                },
-                "company": "Franklin, Peter L Esq",
-                "date": "2017-03-11",
-                "status": "qualified",
-                "verified": false,
-                "activity": 56,
-                "representative": {
-                    "name": "Elwin Sharvill",
-                    "image": "elwinsharvill.png"
-                },
-                "balance": 93905,
-                "email": "quockhanh123@gmail.com",
-                "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777",
-                "myorder": "nvklal433",
-                "createdBy": "Phạm Nam",
-                "password": "43987597436"
-            },
-            {
-                id: "1025",
-                "name": "Alisha Slusarski",
-                "country": {
-                    "name": "Iceland",
-                    "code": "is"
-                },
-                "company": "Wtlz Power 107 Fm",
-                "date": "2018-03-27",
-                "status": "qualified",
-                "verified": true,
-                "activity": 7,
-                "representative": {
-                    "name": "Stephen Shaw",
-                    "image": "stephenshaw.png"
-                },
-                "balance": 93905,
-                "email": "quockhanh123@gmail.com",
-                "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777",
-                "myorder": "nvklal433",
-                "createdBy": "Phạm Nam",
-                "password": "43987597436"
-            },
-            {
-                "id": 1025,
-                "name": "Allene Iturbide",
-                "country": {
-                    "name": "Italy",
-                    "code": "it"
-                },
-                "company": "Ledecky, David Esq",
-                "date": "2016-02-20",
-                "status": "qualified",
-                "verified": true,
-                "activity": 1,
-                "representative": {
-                    "name": "Ivan Magalhaes",
-                    "image": "ivanmagalhaes.png"
-                },
-                "balance": 93905,
-                "email": "quockhanh123@gmail.com",
-                "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777",
-                "myorder": "nvklal433",
-                "createdBy": "Phạm Nam",
-                "password": "43987597436"
-            },
-            {
-                id: "1026",
-                "name": "Chanel Caudy",
-                "country": {
-                    "name": "Argentina",
-                    "code": "ar"
-                },
-                "company": "Professional Image Inc",
-                "date": "2018-06-24",
-                "status": "new",
-                "verified": true,
-                "activity": 26,
-                "representative": {
-                    "name": "Ioni Bowcher",
-                    "image": "ionibowcher.png"
-                },
-                "balance": 93905,
-                "email": "quockhanh123@gmail.com",
-                "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777",
-                "myorder": "nvklal433",
-                "createdBy": "Phạm Nam",
-                "password": "43987597436"
-            },
-            {
-                id: "1027",
-                "name": "Ezekiel Chui",
-                "country": {
-                    "name": "Ireland",
-                    "code": "ie"
-                },
-                "company": "Sider, Donald C Esq",
-                "date": "2016-09-24",
-                "status": "new",
-                "verified": false,
-                "activity": 76,
-                "representative": {
-                    "name": "Amy Elsner",
-                    "image": "amyelsner.png"
-                },
-                "balance": 93905,
-                "email": "quockhanh123@gmail.com",
-                "address": "289 Hoàng Văn Thụ",
-                "phone": "0973256777",
-                "myorder": "nvklal433",
-                "createdBy": "Phạm Nam",
-                "password": "43987597436"
-            },
         ])
     }, []);
 
@@ -741,7 +346,6 @@ const Users = () => {
     const renderHeader = () => {
         return (
             <div className="flex justify-content-between align-items-center">
-                <h5 className="m-0">Customers</h5>
                 <span className="p-input-icon-left">
                     <i className="pi pi-search" />
                     <InputText value={globalFilterValue} onChange={onGlobalFilterChange} placeholder="Keyword Search" />
@@ -752,23 +356,24 @@ const Users = () => {
 
     const nameBodyTemplate = (rowData) => {
         return (
-            <React.Fragment>
-                <img alt="flag" src="images/flag/flag_placeholder.png" style={{ display: "inline", marginRight: "6px"}} onError={(e) => e.target.src = 'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} className={`flag flag-${rowData.country.code}`} width={28}  />
+            <div className='flex items-center w-full gap-2'>
+                <Image alt="flag" src={Logo} className={`flag flag-${rowData.country.code}`} width={28} height={28} />
                 <span className="image-text">{rowData.name}</span>
-            </React.Fragment>
+            </div>
         );
     }
-
-    const idBodyTemplate = (rowData) => {
-        return (rowData.id);
+    const onRowSelect = (event) => {
+        Router.push(`/admin/users/${event.data.id}`)
+    }
+    const onRowUnselect = (event) => {
+        console.log(event)
+    }
+    const emailBodyTemplate = (rowData) => {
+        return (rowData.email);
     }
 
     const phoneBodyTemplate = (rowData) => {
         return (rowData.phone);
-    }
-
-    const createdByBodyTemplate = (rowData) => {
-        return (rowData.createdBy);
     }
 
     const addressBodyTemplate = (rowData) => {
@@ -781,50 +386,66 @@ const Users = () => {
 
     const header = renderHeader();
 
-    const onRowEditComplete = (e) => {
-        let _customers2 = [...customers2];
-        let { newData, index } = e;
-
-        _customers2[index] = newData;
-
-        setCustomers2(_customers2);
-    };
-
-    const textEditor = (options) => {
-        return (
-            <InputText
-                type="text"
-                value={options.value}
-                onChange={(e) => options.editorCallback(e.target.value)}
-            />
-        );
-    };
-
-
     return (
         <div className={styles.wrapper}>
             <div>
-                <DataTable value={customers2} paginator className="p-datatable-customers" header={header} rows={10}
-                    paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" rowsPerPageOptions={[10,25,50]}
-                    dataKey="id" rowHover selection={selectedCustomers} onSelectionChange={e => setSelectedCustomers(e.value)}
-                    globalFilterFields={['name', 'country.name', 'representative.name', 'balance', 'status']} emptyMessage="No customers found."
-                    currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" 
+                <DataTable value={customers2} 
+                    paginator 
+                    className="p-datatable-customers" 
+                    header={header} 
+                    rows={10}
+                    paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" 
+                    rowsPerPageOptions={[10, 25, 50]}
+                    dataKey="id"
+                    rowHover 
+                    selectionMode="single"
+                    selection={selectedCustomers} 
+                    onSelectionChange={e => setSelectedCustomers(e.value)}
+                    onRowSelect={onRowSelect} 
+                    onRowUnselect={onRowUnselect}
+                    globalFilterFields={['name', 'country.name', 'representative.name', 'balance', 'status']} 
+                    emptyMessage="No customers found."
+                    currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
                     editMode="row"
-                    onRowEditComplete={onRowEditComplete}
                     responsiveLayout="scroll"
-                    >
-                    <Column selectionMode="multiple" selectionAriaLabel="name" headerStyle={{ width: '1rem' }}></Column>
-                    <Column field="id" header="ID" sortable dataType="id" style={{ minWidth: '6rem' }} editor={(options) => textEditor(options)} body={idBodyTemplate}/>
-                    <Column field="name" header="Name" style={{ marginRight: "6rem"}} sortable filterPlaceholder="Search by name" editor={(options) => textEditor(options)} body={nameBodyTemplate} />
-                    <Column field="address" header="Address" sortable filterMenuStyle={{ width: '10rem' }} style={{ minWidth: '8rem' }} editor={(options) => textEditor(options)} body={addressBodyTemplate} />
-                    <Column field="createdBy" header="CreatedBy" sortable dataType="createby" style={{ minWidth: '6rem' }} body={createdByBodyTemplate} editor={(options) => textEditor(options)} filterElement={balanceFilterTemplate} />
-                    <Column field="phone" header="Phone" sortable dataType="phone" style={{ minWidth: '6rem' }} body={phoneBodyTemplate} editor={(options) => textEditor(options)} filterElement={balanceFilterTemplate} />
-                    <Column field="password" header="Password" sortable filterField="password" dataType="password" editor={(options) => textEditor(options)} style={{ Width: '4rem' }}  />
-                    <Column field="myorder" header="MyOrder" sortable filterField="myorder" dataType="myorder" editor={(options) => textEditor(options)} style={{ Width: '4rem' }}  />
+                >
                     <Column
-                        rowEditor
-                        headerStyle={{ width: "10%", minWidth: "8rem" }}
-                        bodyStyle={{ textAlign: "center" }}
+                        field="name"
+                        header="Name"
+                        headerStyle={{ width: "100%", minWidth: "8rem" }}
+                        sortable filterPlaceholder="Search by name"
+                        body={nameBodyTemplate} />
+                    <Column
+                        field="email"
+                        header="Email"
+                        headerStyle={{ width: "30%", minWidth: "8rem" }}
+                        sortable dataType="email"
+                        body={emailBodyTemplate} />
+                    <Column
+                        field="address"
+                        header="Address"
+                        headerStyle={{ width: "100%", minWidth: "8rem" }}
+                        sortable filterMenuStyle={{ width: '10rem' }}
+                        style={{ minWidth: '8rem' }}
+                        body={addressBodyTemplate} />
+                    <Column
+                        field="date"
+                        header="Date"
+                        headerStyle={{ width: "20%", minWidth: "8rem" }}
+                        sortable filterField="date"
+                        dataType="date"/>
+                    <Column
+                        field="phone"
+                        header="Phone"
+                        sortable dataType="phone"
+                        style={{ minWidth: '6rem' }}
+                        body={phoneBodyTemplate}
+                        filterElement={balanceFilterTemplate} />
+                    <Column
+                        field="detail"
+                        headerStyle={{ width: "10%", minWidth: "1rem" }}
+                        bodyStyle={{ textAlign: "center"}}
+                        body={<BsEye></BsEye>}
                     ></Column>
                 </DataTable>
             </div>
